@@ -25,7 +25,7 @@
                     Two: 'I'll see you next time.'
                     One: 'Sure. Bye.'`
 
-        let result = text.replace(/\B'/g,'"')
+        let result = text.replace(/\B'|'\B/g,'"')
         console.log(result);
     </script>
 </body>
